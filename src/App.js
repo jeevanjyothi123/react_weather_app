@@ -24,7 +24,7 @@ e.preventDefault();
     const country = e.target.elements.country.value;
 	const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`);
     const data = await api_call.json();
-    if(data){
+    if(data.cod == 200){
     	if(city && country){
 		 this.setState({
         temperature: data.main.temp,
@@ -53,7 +53,7 @@ e.preventDefault();
     country: undefined,
     humidity: undefined,
     description: undefined,
-    error: undefined
+    error: "enter valid city or Country!"
       });
     }
 	
