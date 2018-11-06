@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -29,4 +30,63 @@
   to {
     transform: rotate(360deg);
   }
+}
+body{
+  background: #282b2b;;
+}
+.weather-img{
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.title-container {
+  height: 90vh;
+  background: url("weather1.jpeg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+      margin-top: 31px;
+      border-radius: 4px;
+}
+.card{
+background: #00BCD4;
+    margin-top: 31px;
+}
+.weatherfinder{
+  margin-left: -58%;
+}
+.country{
+  width: 35%;
+  margin-left: 10PX;
+  background: #00BCD4;
+  border: none;
+  outline: none;
+
+    border-bottom: 2px solid white;
+}
+.city{
+  width: 35%;
+ background: #00BCD4;
+  border: none;
+  outline: none;
+
+     border-bottom: 2px solid white;
+}
+
+button{
+  margin-left: 10px;
+}
+
+form{
+  margin-top: 50px;
+}
+
+.btn-primary {
+    color: #00BCD4;
+    background-color: #f6f7f9 !important;
+    border-color: #e9ecef !important;
 }
